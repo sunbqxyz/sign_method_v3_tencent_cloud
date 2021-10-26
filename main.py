@@ -31,7 +31,7 @@ CanonicalRequest = HTTPRequestMethod + '\n' + CanonicalURI + '\n' + CanonicalQue
 
 # 2. 拼接待签名字符串
 Algorithm = 'TC3-HMAC-SHA256'
-RequestTimestamp = 1635216626  # int(time.time())
+RequestTimestamp =int(time.time())
 Date = time.strftime("%Y-%m-%d", time.gmtime())
 Service = 'ocr'
 CredentialScope = f'{Date}/{Service}/tc3_request'
