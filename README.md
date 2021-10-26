@@ -1,0 +1,1 @@
+# sign_method_v3_tencent_cloud
